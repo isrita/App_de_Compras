@@ -1,0 +1,1186 @@
+scrProductosyservicios As screen:
+    Fill: |
+        =
+
+    grpPopUpEye_5 As groupContainer.manualLayoutContainer:
+        Height: =768
+        Visible: =varshowPopUpEyeProductosyservicios
+        Width: =1366
+        ZIndex: =27
+
+        Rectangle2_4 As rectangle:
+            Fill: =RGBA(0, 0, 0, 0.2)
+            Height: =768
+            OnSelect: |-
+                =UpdateContext({varshowPopUpEyeProductosyservicios:false})
+            Visible: =varshowPopUpEyeProductosyservicios
+            Width: =1366
+            ZIndex: =1
+
+        grpsegundoPopUp_9 As groupContainer.manualLayoutContainer:
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =768
+            RadiusBottomLeft: =5
+            RadiusBottomRight: =5
+            RadiusTopLeft: =5
+            RadiusTopRight: =5
+            Visible: =varshowPopUpEyeProductosyservicios
+            Width: =494
+            X: =436
+            ZIndex: =2
+
+            grpCrearOrdenDeCompra_6 As groupContainer.manualLayoutContainer:
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =768
+                RadiusBottomLeft: =5
+                RadiusBottomRight: =5
+                RadiusTopLeft: =5
+                RadiusTopRight: =5
+                Visible: =varshowPopUpEyeProductosyservicios
+                Width: =493
+                X: =1
+                ZIndex: =1
+
+                Canvas1_2 As fluidGrid.fluidGridWithBlankCard:
+                    BorderThickness: =0
+                    Height: =768
+                    Width: =Parent.Width
+                    ZIndex: =1
+
+                    DataCard1_2 As dataCard:
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        BorderStyle: =BorderStyle.Solid
+                        BorderThickness: =0
+                        DisplayMode: =DisplayMode.Edit
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =912
+                        Width: =Parent.Width
+                        X: =0
+                        Y: =0
+                        ZIndex: =1
+
+                        TxtOrdendeCompra_43 As label:
+                            Font: =Font.Arial
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =16
+                            Text: ="Elemento"
+                            Width: =250
+                            X: =32
+                            Y: =24
+                            ZIndex: =1
+
+                        Icon2_5 As icon.Cancel:
+                            Height: =20
+                            Icon: =Icon.Cancel
+                            OnSelect: |-
+                                =UpdateContext({varshowPopUpEyeProductosyservicios:false})
+                            Width: =20
+                            X: =445
+                            Y: =28
+                            ZIndex: =2
+
+                        TxtOrdendeCompra_44 As label:
+                            Color: =RGBA(99, 99, 99, 1)
+                            Font: =Font.Arial
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =12
+                            Text: |-
+                                ="Tipo
+                                "
+                            Width: =143
+                            X: =32
+                            Y: =72
+                            ZIndex: =3
+
+                        TxtOrdendeCompra_45 As label:
+                            Color: =RGBA(99, 99, 99, 1)
+                            Font: =Font.Arial
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =12
+                            Text: ="Categoria"
+                            Width: =142
+                            X: =32
+                            Y: =180
+                            ZIndex: =4
+
+                        TxtOrdendeCompra_46 As label:
+                            Color: =RGBA(99, 99, 99, 1)
+                            Font: =Font.Arial
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =12
+                            Text: ="SubCategoría"
+                            Width: =142
+                            X: =32
+                            Y: =288
+                            ZIndex: =5
+
+                        TxtOrdendeCompra_47 As label:
+                            Color: =RGBA(99, 99, 99, 1)
+                            Font: =Font.Arial
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =12
+                            Text: ="Producto"
+                            Width: =142
+                            X: =32
+                            Y: =396
+                            ZIndex: =6
+
+                        TextInput2_18 As text:
+                            BorderColor: =ColorValue(varPrimaryColor)
+                            BorderThickness: =1
+                            Default: =""
+                            Height: =46
+                            HoverBorderColor: =ColorValue(varPrimaryColor)
+                            HoverFill: =RGBA(255, 255, 255, 1)
+                            Width: =424
+                            X: =32
+                            Y: =436
+                            ZIndex: =7
+
+                        Button1_7 As button:
+                            BorderColor: =ColorValue(varPrimaryColor)
+                            BorderThickness: =0
+                            Fill: =ColorValue(varPrimaryColor)
+                            Height: =56
+                            HoverBorderColor: =ColorValue(varPrimaryColor)
+                            HoverFill: =ColorValue(varPrimaryColor)
+                            OnSelect: |-
+                                =UpdateContext({varshowPopUpEyeProductosyservicios:false})
+                            PressedColor: =RGBA(255, 255, 255, 1)
+                            PressedFill: =ColorValue(varPrimaryColor)
+                            RadiusBottomLeft: =5
+                            RadiusBottomRight: =5
+                            RadiusTopLeft: =5
+                            RadiusTopRight: =5
+                            Text: ="Guardar Cambios"
+                            Width: =424
+                            X: =32
+                            Y: =828
+                            ZIndex: =8
+
+                        TextInput2_21 As text:
+                            BorderColor: =ColorValue(varPrimaryColor)
+                            BorderThickness: =1
+                            Default: =""
+                            Height: =46
+                            HoverBorderColor: =ColorValue(varPrimaryColor)
+                            HoverFill: =RGBA(255, 255, 255, 1)
+                            Width: =424
+                            X: =32
+                            Y: =760
+                            ZIndex: =9
+
+                        TxtOrdendeCompra_48 As label:
+                            Color: =RGBA(99, 99, 99, 1)
+                            Font: =Font.Arial
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =12
+                            Text: ="Descripión"
+                            Width: =142
+                            X: =32
+                            Y: =504
+                            ZIndex: =12
+
+                        TxtOrdendeCompra_49 As label:
+                            Color: =RGBA(99, 99, 99, 1)
+                            Font: =Font.Arial
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =12
+                            Text: ="Precio Unitario"
+                            Width: =142
+                            X: =32
+                            Y: =612
+                            ZIndex: =13
+
+                        TextInput2_22 As text:
+                            BorderColor: =ColorValue(varPrimaryColor)
+                            BorderThickness: =1
+                            Default: =""
+                            Height: =46
+                            HoverBorderColor: =ColorValue(varPrimaryColor)
+                            HoverFill: =RGBA(255, 255, 255, 1)
+                            Width: =424
+                            X: =32
+                            Y: =544
+                            ZIndex: =14
+
+                        TextInput2_23 As text:
+                            BorderColor: =ColorValue(varPrimaryColor)
+                            BorderThickness: =1
+                            Default: =""
+                            Height: =46
+                            HoverBorderColor: =ColorValue(varPrimaryColor)
+                            HoverFill: =RGBA(255, 255, 255, 1)
+                            Width: =424
+                            X: =32
+                            Y: =652
+                            ZIndex: =15
+
+                        DropdownProveedor_23 As dropdown:
+                            BorderColor: =RGBA(212, 212, 212, 1)
+                            BorderThickness: =1
+                            ChevronBackground: =ColorValue(varPrimaryColor)
+                            ChevronHoverBackground: =ColorValue(varPrimaryColor)
+                            Height: =46
+                            HoverBorderColor: =ColorValue(varPrimaryColor)
+                            HoverFill: =ColorFade(ColorValue(varPrimaryColor), 0.7)
+                            Items: =DropDownSample
+                            PressedBorderColor: =ColorValue(varPrimaryColor)
+                            PressedFill: =ColorValue(varPrimaryColor)
+                            SelectionFill: =ColorValue(varPrimaryColor)
+                            Size: =12
+                            Width: =428
+                            X: =32
+                            Y: =112
+                            ZIndex: =16
+
+                        DropdownProveedor_22 As dropdown:
+                            BorderColor: =RGBA(212, 212, 212, 1)
+                            BorderThickness: =1
+                            ChevronBackground: =ColorValue(varPrimaryColor)
+                            ChevronHoverBackground: =ColorValue(varPrimaryColor)
+                            Height: =46
+                            HoverBorderColor: =ColorValue(varPrimaryColor)
+                            HoverFill: =ColorFade(ColorValue(varPrimaryColor), 0.7)
+                            Items: =DropDownSample
+                            PressedBorderColor: =ColorValue(varPrimaryColor)
+                            PressedFill: =ColorValue(varPrimaryColor)
+                            SelectionFill: =ColorValue(varPrimaryColor)
+                            Size: =12
+                            Width: =428
+                            X: =32
+                            Y: =220
+                            ZIndex: =17
+
+                        DropdownProveedor_24 As dropdown:
+                            BorderColor: =RGBA(212, 212, 212, 1)
+                            BorderThickness: =1
+                            ChevronBackground: =ColorValue(varPrimaryColor)
+                            ChevronHoverBackground: =ColorValue(varPrimaryColor)
+                            Height: =46
+                            HoverBorderColor: =ColorValue(varPrimaryColor)
+                            HoverFill: =ColorFade(ColorValue(varPrimaryColor), 0.7)
+                            Items: =DropDownSample
+                            PressedBorderColor: =ColorValue(varPrimaryColor)
+                            PressedFill: =ColorValue(varPrimaryColor)
+                            SelectionFill: =ColorValue(varPrimaryColor)
+                            Size: =12
+                            Width: =428
+                            X: =32
+                            Y: =328
+                            ZIndex: =18
+
+                        TxtOrdendeCompra_51 As label:
+                            Color: =RGBA(99, 99, 99, 1)
+                            Font: =Font.Arial
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =12
+                            Text: ="Stock"
+                            Width: =142
+                            X: =32
+                            Y: =720
+                            ZIndex: =19
+
+    grpPrimerPopUp_5 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =31
+
+        rctdegradado_5 As rectangle:
+            Fill: =RGBA(0, 0, 0, 0.2)
+            Height: =768
+            OnSelect: |-
+                =UpdateContext({varshowPopUpProductosyservicios:false})
+            Visible: |
+                =varshowPopUpProductosyservicios
+            Width: =1366
+            ZIndex: =28
+
+        grpCrearOrdenDeCompra_7 As groupContainer.manualLayoutContainer:
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =768
+            RadiusBottomLeft: =5
+            RadiusBottomRight: =5
+            RadiusTopLeft: =5
+            RadiusTopRight: =5
+            Visible: |
+                =varshowPopUpProductosyservicios
+            Width: =498
+            X: =434
+            ZIndex: =29
+
+            Canvas1_1 As fluidGrid.fluidGridWithBlankCard:
+                BorderThickness: =0
+                Height: =768
+                Width: =Parent.Width
+                ZIndex: =38
+
+                DataCard1_1 As dataCard:
+                    BorderColor: =RGBA(0, 0, 0, 1)
+                    BorderStyle: =BorderStyle.Solid
+                    BorderThickness: =0
+                    DisplayMode: =DisplayMode.Edit
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =912
+                    Width: =Parent.Width
+                    X: =0
+                    Y: =0
+                    ZIndex: =1
+
+                    TxtOrdendeCompra_40 As label:
+                        Font: =Font.Arial
+                        FontWeight: =FontWeight.Semibold
+                        Height: =30
+                        Size: =16
+                        Text: ="Agregar Elemento"
+                        Width: =250
+                        X: =32
+                        Y: =24
+                        ZIndex: =1
+
+                    Icon2_4 As icon.Cancel:
+                        Height: =20
+                        Icon: =Icon.Cancel
+                        OnSelect: |-
+                            =UpdateContext({varshowPopUpProductosyservicios:false})
+                        Width: =20
+                        X: =445
+                        Y: =28
+                        ZIndex: =2
+
+                    TxtOrdendeCompra_39 As label:
+                        Color: =RGBA(99, 99, 99, 1)
+                        Font: =Font.Arial
+                        FontWeight: =FontWeight.Semibold
+                        Height: =30
+                        Size: =12
+                        Text: |-
+                            ="Tipo
+                            "
+                        Width: =143
+                        X: =32
+                        Y: =72
+                        ZIndex: =3
+
+                    TxtOrdendeCompra_38 As label:
+                        Color: =RGBA(99, 99, 99, 1)
+                        Font: =Font.Arial
+                        FontWeight: =FontWeight.Semibold
+                        Height: =30
+                        Size: =12
+                        Text: ="Categoria"
+                        Width: =142
+                        X: =32
+                        Y: =180
+                        ZIndex: =4
+
+                    TxtOrdendeCompra_37 As label:
+                        Color: =RGBA(99, 99, 99, 1)
+                        Font: =Font.Arial
+                        FontWeight: =FontWeight.Semibold
+                        Height: =30
+                        Size: =12
+                        Text: ="SubCategoría"
+                        Width: =142
+                        X: =32
+                        Y: =288
+                        ZIndex: =5
+
+                    TxtOrdendeCompra_36 As label:
+                        Color: =RGBA(99, 99, 99, 1)
+                        Font: =Font.Arial
+                        FontWeight: =FontWeight.Semibold
+                        Height: =30
+                        Size: =12
+                        Text: ="Producto"
+                        Width: =142
+                        X: =32
+                        Y: =396
+                        ZIndex: =6
+
+                    TextInput2_16 As text:
+                        BorderColor: =ColorValue(varPrimaryColor)
+                        BorderThickness: =1
+                        Default: =""
+                        Height: =46
+                        HoverBorderColor: =ColorValue(varPrimaryColor)
+                        HoverFill: =RGBA(255, 255, 255, 1)
+                        Width: =424
+                        X: =32
+                        Y: =436
+                        ZIndex: =7
+
+                    Button1_6 As button:
+                        BorderColor: =ColorValue(varPrimaryColor)
+                        BorderThickness: =0
+                        Fill: =ColorValue(varPrimaryColor)
+                        Height: =56
+                        HoverBorderColor: =ColorValue(varPrimaryColor)
+                        HoverFill: =ColorValue(varPrimaryColor)
+                        PressedColor: =RGBA(255, 255, 255, 1)
+                        PressedFill: =ColorValue(varPrimaryColor)
+                        RadiusBottomLeft: =5
+                        RadiusBottomRight: =5
+                        RadiusTopLeft: =5
+                        RadiusTopRight: =5
+                        Text: ="Agregar Elemento"
+                        Width: =424
+                        X: =32
+                        Y: =828
+                        ZIndex: =8
+
+                    TextInput2_19 As text:
+                        BorderColor: =ColorValue(varPrimaryColor)
+                        BorderThickness: =1
+                        Default: =""
+                        Height: =46
+                        HoverBorderColor: =ColorValue(varPrimaryColor)
+                        HoverFill: =RGBA(255, 255, 255, 1)
+                        Width: =424
+                        X: =32
+                        Y: =760
+                        ZIndex: =9
+
+                    TxtOrdendeCompra_41 As label:
+                        Color: =RGBA(99, 99, 99, 1)
+                        Font: =Font.Arial
+                        FontWeight: =FontWeight.Semibold
+                        Height: =30
+                        Size: =12
+                        Text: ="Descripión"
+                        Width: =142
+                        X: =32
+                        Y: =504
+                        ZIndex: =12
+
+                    TxtOrdendeCompra_42 As label:
+                        Color: =RGBA(99, 99, 99, 1)
+                        Font: =Font.Arial
+                        FontWeight: =FontWeight.Semibold
+                        Height: =30
+                        Size: =12
+                        Text: ="Precio Unitario"
+                        Width: =142
+                        X: =32
+                        Y: =612
+                        ZIndex: =13
+
+                    TextInput2_17 As text:
+                        BorderColor: =ColorValue(varPrimaryColor)
+                        BorderThickness: =1
+                        Default: =""
+                        Height: =46
+                        HoverBorderColor: =ColorValue(varPrimaryColor)
+                        HoverFill: =RGBA(255, 255, 255, 1)
+                        Width: =424
+                        X: =32
+                        Y: =544
+                        ZIndex: =14
+
+                    TextInput2_20 As text:
+                        BorderColor: =ColorValue(varPrimaryColor)
+                        BorderThickness: =1
+                        Default: =""
+                        Height: =46
+                        HoverBorderColor: =ColorValue(varPrimaryColor)
+                        HoverFill: =RGBA(255, 255, 255, 1)
+                        Width: =424
+                        X: =32
+                        Y: =652
+                        ZIndex: =15
+
+                    DropdownProveedor_19 As dropdown:
+                        BorderColor: =RGBA(212, 212, 212, 1)
+                        BorderThickness: =1
+                        ChevronBackground: =ColorValue(varPrimaryColor)
+                        ChevronHoverBackground: =ColorValue(varPrimaryColor)
+                        Height: =46
+                        HoverBorderColor: =ColorValue(varPrimaryColor)
+                        HoverFill: =ColorFade(ColorValue(varPrimaryColor), 0.7)
+                        Items: =DropDownSample
+                        PressedBorderColor: =ColorValue(varPrimaryColor)
+                        PressedFill: =ColorValue(varPrimaryColor)
+                        SelectionFill: =ColorValue(varPrimaryColor)
+                        Size: =12
+                        Width: =428
+                        X: =32
+                        Y: =112
+                        ZIndex: =16
+
+                    DropdownProveedor_20 As dropdown:
+                        BorderColor: =RGBA(212, 212, 212, 1)
+                        BorderThickness: =1
+                        ChevronBackground: =ColorValue(varPrimaryColor)
+                        ChevronHoverBackground: =ColorValue(varPrimaryColor)
+                        Height: =46
+                        HoverBorderColor: =ColorValue(varPrimaryColor)
+                        HoverFill: =ColorFade(ColorValue(varPrimaryColor), 0.7)
+                        Items: =DropDownSample
+                        PressedBorderColor: =ColorValue(varPrimaryColor)
+                        PressedFill: =ColorValue(varPrimaryColor)
+                        SelectionFill: =ColorValue(varPrimaryColor)
+                        Size: =12
+                        Width: =428
+                        X: =32
+                        Y: =220
+                        ZIndex: =17
+
+                    DropdownProveedor_21 As dropdown:
+                        BorderColor: =RGBA(212, 212, 212, 1)
+                        BorderThickness: =1
+                        ChevronBackground: =ColorValue(varPrimaryColor)
+                        ChevronHoverBackground: =ColorValue(varPrimaryColor)
+                        Height: =46
+                        HoverBorderColor: =ColorValue(varPrimaryColor)
+                        HoverFill: =ColorFade(ColorValue(varPrimaryColor), 0.7)
+                        Items: =DropDownSample
+                        PressedBorderColor: =ColorValue(varPrimaryColor)
+                        PressedFill: =ColorValue(varPrimaryColor)
+                        SelectionFill: =ColorValue(varPrimaryColor)
+                        Size: =12
+                        Width: =428
+                        X: =32
+                        Y: =328
+                        ZIndex: =18
+
+                    TxtOrdendeCompra_50 As label:
+                        Color: =RGBA(99, 99, 99, 1)
+                        Font: =Font.Arial
+                        FontWeight: =FontWeight.Semibold
+                        Height: =30
+                        Size: =12
+                        Text: ="Stock"
+                        Width: =142
+                        X: =32
+                        Y: =720
+                        ZIndex: =19
+
+    grpDisenoProductosyservicios As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =31
+
+        btnproveedores_4 As button:
+            Align: =Align.Left
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            Color: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Font: =Font.Arial
+            FontWeight: =FontWeight.Normal
+            Height: =44
+            HoverBorderColor: =ColorValue(varPrimaryColor)
+            HoverFill: =ColorValue(varPrimaryColor)
+            OnSelect: =Navigate(scrProveedores)
+            PressedBorderColor: =ColorValue(varPrimaryColor)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =ColorValue(varPrimaryColor)
+            RadiusBottomLeft: =5
+            RadiusBottomRight: =5
+            RadiusTopLeft: =5
+            RadiusTopRight: =5
+            Size: =12
+            Text: ="          Proveedores"
+            Width: =208
+            X: =20
+            Y: =394
+            ZIndex: =1
+
+        btnfacturas_9 As button:
+            Align: =Align.Left
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            Fill: |+
+                =ColorValue(varPrimaryColor)
+                
+            Font: =Font.Arial
+            FontWeight: =FontWeight.Normal
+            Height: =44
+            HoverFill: =ColorValue(varPrimaryColor)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =ColorValue(varPrimaryColor)
+            RadiusBottomLeft: =5
+            RadiusBottomRight: =5
+            RadiusTopLeft: =5
+            RadiusTopRight: =5
+            Size: =12
+            Text: ="         Productos & servicios"
+            Width: =212
+            X: =20
+            Y: =454
+            ZIndex: =2
+
+        btnpagos_4 As button:
+            Align: =Align.Left
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            Color: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Font: =Font.Arial
+            FontWeight: =FontWeight.Lighter
+            Height: =44
+            HoverBorderColor: =ColorValue(varPrimaryColor)
+            HoverFill: =ColorValue(varPrimaryColor)
+            OnSelect: =Navigate(scrPagos, ScreenTransition.None)
+            PressedBorderColor: =ColorValue(varPrimaryColor)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =ColorValue(varPrimaryColor)
+            RadiusBottomLeft: =5
+            RadiusBottomRight: =5
+            RadiusTopLeft: =5
+            RadiusTopRight: =5
+            Size: =12
+            Text: ="          Pagos"
+            Width: =208
+            X: =20
+            Y: =229
+            ZIndex: =3
+
+        btnOrdenesdecompra_5 As button:
+            Align: =Align.Left
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            Color: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Font: =Font.Arial
+            FontWeight: =FontWeight.Normal
+            Height: =44
+            HoverBorderColor: =RGBA(71, 132, 141, 1)
+            HoverFill: =ColorValue(varPrimaryColor)
+            OnSelect: =Navigate(scrOrdenesdeCompra, ScreenTransition.None)
+            PressedBorderColor: =RGBA(71, 132, 141, 1)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =ColorValue(varPrimaryColor)
+            RadiusBottomLeft: =5
+            RadiusBottomRight: =5
+            RadiusTopLeft: =5
+            RadiusTopRight: =5
+            Size: =12
+            Text: ="          Ódenes de compra"
+            Width: =208
+            X: =20
+            Y: =132
+            ZIndex: =4
+
+        btnfacturas_8 As button:
+            Align: =Align.Left
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            Color: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Font: =Font.Arial
+            FontWeight: =FontWeight.Normal
+            Height: =44
+            HoverBorderColor: =RGBA(71, 132, 141, 1)
+            HoverFill: =ColorValue(varPrimaryColor)
+            OnSelect: =Navigate(scrFacturas, ScreenTransition.None)
+            PressedBorderColor: =RGBA(71, 132, 141, 1)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =ColorValue(varPrimaryColor)
+            RadiusBottomLeft: =5
+            RadiusBottomRight: =5
+            RadiusTopLeft: =5
+            RadiusTopRight: =5
+            Size: =12
+            Text: ="          Facturas"
+            Width: =208
+            X: =20
+            Y: =182
+            ZIndex: =5
+
+        txttittle_5 As label:
+            Color: =RGBA(71, 132, 141, 1)
+            Font: =Font.Arial
+            Height: =52
+            LineHeight: =0
+            Size: =20
+            Text: ="App de Compras"
+            Width: =271
+            X: =32
+            Y: =20
+            ZIndex: =6
+
+        txtgestion_5 As label:
+            Fill: =RGBA(70, 140, 140, 0)
+            Font: =Font.Arial
+            FontWeight: =FontWeight.Bold
+            Height: =19
+            LineHeight: =0
+            Size: =8
+            Text: ="Gestión"
+            Width: =79
+            X: =32
+            Y: =104
+            ZIndex: =7
+
+        txtmaestros_5 As label:
+            Fill: =RGBA(70, 140, 140, 0)
+            Font: =Font.Arial
+            FontWeight: =FontWeight.Bold
+            Height: =20
+            LineHeight: =0
+            Size: =8
+            Text: ="Maestros"
+            Width: =104
+            X: =32
+            Y: =374
+            ZIndex: =8
+
+        Iconline_27 As rectangle:
+            DisabledFill: |
+                =
+            Fill: |
+                =ColorValue(varlineColor)
+            Height: =1
+            Width: =208
+            X: =20
+            Y: =356
+            ZIndex: =9
+
+        Iconline_24 As rectangle:
+            DisabledFill: |
+                =
+            Fill: |
+                =ColorValue(varlineColor)
+            Height: =1
+            Width: =1366
+            Y: =72
+            ZIndex: =10
+
+        Iconline_25 As rectangle:
+            DisabledFill: |
+                =
+            Fill: |
+                =ColorValue(varlineColor)
+            Height: =695
+            Width: =1
+            X: =249
+            Y: =73
+            ZIndex: =11
+
+        btnNuevaOrden_5 As button:
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            Fill: |+
+                =ColorValue(varPrimaryColor)
+                
+            Font: =Font.Arial
+            FontWeight: =FontWeight.Normal
+            Height: =44
+            HoverBorderColor: =ColorValue(varPrimaryColor)
+            HoverFill: =ColorValue(varPrimaryColor)
+            OnSelect: |-
+                =UpdateContext({varshowPopUpProductosyservicios:true})
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =ColorValue(varPrimaryColor)
+            RadiusBottomLeft: =5
+            RadiusBottomRight: =5
+            RadiusTopLeft: =5
+            RadiusTopRight: =5
+            Size: =12
+            Text: ="     Agregar Elemento"
+            Width: =200
+            X: =1134
+            Y: =104
+            ZIndex: =12
+
+        txtfinanzas_5 As label:
+            Color: =RGBA(99, 99, 99, 1)
+            Fill: =RGBA(212, 212, 212, 0)
+            Font: =Font.Arial
+            Height: =19
+            LineHeight: =0
+            Text: ="Finanzas"
+            Width: =83
+            X: =1198
+            Y: =20
+            ZIndex: =13
+
+        Iconmas_4 As icon.Add:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =20
+            Icon: =Icon.Add
+            OnSelect: |-
+                =UpdateContext({varshowPopUp:true})
+            Width: =20
+            X: =1146
+            Y: =117
+            ZIndex: =14
+
+        txtfacturas_4 As label:
+            Fill: =RGBA(70, 140, 140, 0)
+            Font: =Font.Arial
+            FontWeight: =FontWeight.Lighter
+            Height: =52
+            LineHeight: =0
+            Size: =20
+            Text: ="Productos & Servicios"
+            Width: =323
+            X: =281
+            Y: =96
+            ZIndex: =15
+
+        txtusuario_5 As label:
+            Fill: =RGBA(70, 140, 140, 0)
+            Font: =Font.Arial
+            FontWeight: =FontWeight.Semibold
+            Height: =66
+            LineHeight: =0
+            Text: |
+                =User().FullName
+            Width: =259
+            X: =1022
+            Y: =20
+            ZIndex: =16
+
+        imgusuario_5 As image:
+            Height: =36
+            Image: |
+                =User().Image
+            RadiusBottomLeft: |
+                =60
+            RadiusBottomRight: =60
+            RadiusTopLeft: |
+                =60
+            RadiusTopRight: |
+                =60
+            Width: =36
+            X: =1283
+            Y: =25
+            ZIndex: =17
+
+        Image1_48 As image:
+            Height: =20
+            Image: =logo_facturas
+            Width: =20
+            X: =39
+            Y: =192
+            ZIndex: =19
+
+        Image1_49 As image:
+            Height: =20
+            Image: =Imagen1
+            Width: =20
+            X: =39
+            Y: =240
+            ZIndex: =20
+
+        btnmercaderia_4 As button:
+            Align: =Align.Left
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            Color: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Font: =Font.Arial
+            FontWeight: =FontWeight.Normal
+            Height: =44
+            HoverBorderColor: =ColorValue(varPrimaryColor)
+            HoverFill: =ColorValue(varPrimaryColor)
+            OnSelect: =Navigate(scrMercaderia, ScreenTransition.None)
+            PressedBorderColor: =ColorValue(varPrimaryColor)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =ColorValue(varPrimaryColor)
+            RadiusBottomLeft: =5
+            RadiusBottomRight: =5
+            RadiusTopLeft: =5
+            RadiusTopRight: =5
+            Size: =12
+            Text: ="          Mercadería"
+            Width: =208
+            X: =20
+            Y: =276
+            ZIndex: =21
+
+        Image1_50 As image:
+            Height: =20
+            Image: |
+                =Imagen5
+            Width: =20
+            X: =39
+            Y: =288
+            ZIndex: =22
+
+        Image1_51 As image:
+            Height: =20
+            Image: |
+                =Imagen3
+            Width: =20
+            X: =39
+            Y: =406
+            ZIndex: =23
+
+        Image1_52 As image:
+            Height: =20
+            Image: =Imagen10
+            Width: =20
+            X: =39
+            Y: =465
+            ZIndex: =25
+
+        Container2_5 As groupContainer.manualLayoutContainer:
+            Height: =568
+            Width: =1053
+            X: =281
+            Y: =168
+            ZIndex: =26
+
+            Container1_7 As groupContainer.manualLayoutContainer:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                DropShadow: =DropShadow.None
+                Fill: =RGBA(231, 236, 237, 1)
+                Height: =36
+                RadiusBottomLeft: =1
+                RadiusBottomRight: =1
+                Width: =1013
+                X: =20
+                Y: =88
+                ZIndex: =1
+
+                Label1_69 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =36
+                    Size: =9
+                    Text: ="Tipo"
+                    Width: =88
+                    X: =20
+                    ZIndex: =1
+
+                Label1_71 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =36
+                    Size: =9
+                    Text: ="Categoria"
+                    Width: =137
+                    X: =141
+                    ZIndex: =2
+
+                Label1_72 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =36
+                    Size: =9
+                    Text: ="Descripción"
+                    Width: =104
+                    X: =561
+                    ZIndex: =4
+
+                Label1_74 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =36
+                    Size: =9
+                    Text: ="Producto"
+                    Width: =144
+                    X: =420
+                    ZIndex: =8
+
+                Label1_75 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =36
+                    Size: =9
+                    Text: ="SubCategoria"
+                    Width: =137
+                    X: =275
+                    ZIndex: =9
+
+                Label1_76 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =36
+                    Size: =9
+                    Text: ="Precio Unitario"
+                    Width: =104
+                    X: =771
+                    ZIndex: =10
+
+                Label1_78 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =36
+                    Size: =9
+                    Text: ="Stock"
+                    Width: =104
+                    X: =897
+                    ZIndex: =11
+
+            TxtInput_7 As text:
+                BorderColor: =RGBA(212, 212, 212, 1)
+                Color: =RGBA(147, 147, 147, 1)
+                Default: ="Buscar orden de compra"
+                DisabledColor: =RGBA(147, 147, 147, 1)
+                Fill: =RGBA(212, 212, 212, 0)
+                Font: =Font.Arial
+                Height: =44
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverColor: =RGBA(147, 147, 147, 1)
+                OnSelect: =
+                Size: =12
+                Visible: =
+                Width: =800
+                X: =20
+                Y: =20
+                ZIndex: =2
+
+            Iconline_26 As rectangle:
+                DisabledFill: |
+                    =
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =1
+                Width: =1013
+                X: =20
+                Y: =123
+                ZIndex: =3
+
+            TextInput1_6 As text:
+                BorderColor: =RGBA(212, 212, 212, 1)
+                BorderThickness: =1
+                Color: =RGBA(147, 147, 147, 1)
+                Default: =
+                DisabledBorderColor: =RGBA(212, 212, 212, 1)
+                DisabledColor: =RGBA(147, 147, 147, 1)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                Fill: =RGBA(147, 147, 147, 0)
+                Height: =44
+                HintText: ="Buscar producto"
+                HoverBorderColor: =RGBA(212, 212, 212, 1)
+                HoverColor: =RGBA(147, 147, 147, 1)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                PressedColor: =RGBA(147, 147, 147, 1)
+                PressedFill: =
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Width: =800
+                X: =20
+                Y: =20
+                ZIndex: =14
+
+            Iconbuscar_8 As icon.Search:
+                BorderColor: =RGBA(147, 147, 147, 1)
+                Color: =RGBA(147, 147, 147, 1)
+                Height: =18
+                Icon: =Icon.Search
+                Width: =18
+                X: =789
+                Y: =33
+                ZIndex: =18
+
+            Label5_6 As label:
+                Color: =RGBA(147, 147, 147, 1)
+                Text: ="Buscar orden de comprar"
+                Visible: |
+                    =IsBlank(Label5_6)
+                Width: =233
+                X: =32
+                Y: =24
+                ZIndex: =19
+
+            Gallery1_7 As gallery.galleryVertical:
+                DelayItemLoading: =true
+                Height: =443
+                Items: =CustomGallerySample
+                Layout: =Layout.Vertical
+                LoadingSpinner: =LoadingSpinner.Data
+                TemplatePadding: =0
+                TemplateSize: =36
+                Width: =1013
+                X: =20
+                Y: =124
+                ZIndex: =20
+
+                Label4_7 As label:
+                    Height: =36
+                    OnSelect: =Select(Parent)
+                    Size: =12
+                    Text: ="Producto"
+                    Width: =250
+                    X: =17
+                    ZIndex: =1
+
+                Label2_61 As label:
+                    Height: =36
+                    Size: =12
+                    Text: ="Categoría 1"
+                    Width: =133
+                    X: =140
+                    ZIndex: =4
+
+                Label2_66 As label:
+                    Height: =35
+                    Size: =12
+                    Text: ="Producto 1"
+                    Width: =100
+                    X: =420
+                    Y: =1
+                    ZIndex: =6
+
+                Label2_65 As label:
+                    Height: =35
+                    Size: =12
+                    Text: ="Descripcion de producto"
+                    Width: =250
+                    X: =561
+                    Y: =1
+                    ZIndex: =7
+
+                Image1_47 As image:
+                    Height: =20
+                    Image: =img_ojo
+                    OnSelect: |-
+                        =UpdateContext({varshowPopUpEyeProductosyservicios:true})
+                    Width: =20
+                    X: =983
+                    Y: =8
+                    ZIndex: =8
+
+                Rectangle3_7 As rectangle:
+                    BorderColor: =RGBA(147, 147, 147, 1)
+                    Fill: =RGBA(147, 147, 147, 1)
+                    Height: =1
+                    OnSelect: =Select(Parent)
+                    Width: =Parent.Width
+                    Y: =35
+                    ZIndex: =9
+
+                Label2_62 As label:
+                    Height: =36
+                    Size: =12
+                    Text: ="SubCategoría 1"
+                    Width: =133
+                    X: =275
+                    ZIndex: =10
+
+                Label1_77 As label:
+                    Height: =36
+                    Size: =12
+                    Text: ="$ 20.00"
+                    Width: =104
+                    X: =779
+                    ZIndex: =11
+
+                Label1_79 As label:
+                    Height: =36
+                    Size: =12
+                    Text: ="20"
+                    Width: =40
+                    X: =902
+                    ZIndex: =12
+
+        Image1_45 As image:
+            Height: =20
+            Image: =Imagen11
+            Width: =20
+            X: =39
+            Y: =144
+            ZIndex: =30
+

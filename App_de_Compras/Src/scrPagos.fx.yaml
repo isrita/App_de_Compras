@@ -1,0 +1,1162 @@
+scrPagos As screen:
+    Fill: |
+        =
+
+    grpPopUpEye_2 As groupContainer.manualLayoutContainer:
+        Height: =768
+        Visible: =varshowPopUpEyePagos
+        Width: =1366
+        ZIndex: =27
+
+        Rectangle2_1 As rectangle:
+            Fill: =RGBA(0, 0, 0, 0.2)
+            Height: =768
+            OnSelect: |-
+                =UpdateContext({varshowPopUpEyePagos:false})
+            Visible: =varshowPopUpEyePagos
+            Width: =1366
+            ZIndex: =1
+
+        grpsegundoPopUp_4 As groupContainer.manualLayoutContainer:
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =482
+            RadiusBottomLeft: =5
+            RadiusBottomRight: =5
+            RadiusTopLeft: =5
+            RadiusTopRight: =5
+            Visible: =varshowPopUpEyePagos
+            Width: =631
+            X: =367
+            Y: =143
+            ZIndex: =2
+
+            GroupOrdendecompra_4 As group:
+                Height: =5
+                Width: =5
+                X: =40
+                Y: =24
+                ZIndex: =13
+
+                TxtOrdendeCompra_6 As label:
+                    Font: =Font.Arial
+                    Height: =52
+                    Size: =24
+                    Text: ="Pago"
+                    Visible: |
+                        =varshowPopUpEyePagos
+                    Width: =261
+                    X: =32
+                    Y: =20
+                    ZIndex: =1
+
+                RctLine2_6 As rectangle:
+                    Fill: =RGBA(212, 212, 212, 1)
+                    Height: =1
+                    Visible: |
+                        =varshowPopUpEyePagos
+                    Width: =675
+                    Y: =77
+                    ZIndex: =2
+
+                TxtIDorden_14 As label:
+                    Color: =RGBA(99, 99, 99, 1)
+                    Font: =Font.Arial
+                    FontWeight: =FontWeight.Semibold
+                    Height: =36
+                    Size: =12
+                    Text: ="Orden de compra"
+                    Visible: |
+                        =varshowPopUpEyePagos
+                    Width: =148
+                    X: =32
+                    Y: =100
+                    ZIndex: =3
+
+                TxtProveedor_5 As label:
+                    Color: =RGBA(99, 99, 99, 1)
+                    Font: =Font.Arial
+                    FontWeight: =FontWeight.Semibold
+                    Height: =36
+                    Size: =12
+                    Text: ="Factura"
+                    Visible: |
+                        =varshowPopUpEyePagos
+                    Width: =72
+                    X: =32
+                    Y: =160
+                    ZIndex: =4
+
+                TxtLineadeNegocio_7 As label:
+                    Color: =RGBA(99, 99, 99, 1)
+                    Font: =Font.Arial
+                    FontWeight: =FontWeight.Semibold
+                    Height: =38
+                    Size: =12
+                    Text: ="Proveedor"
+                    Visible: |
+                        =varshowPopUpEyePagos
+                    Width: =113
+                    X: =32
+                    Y: =220
+                    ZIndex: =6
+
+                Producto_5 As label:
+                    Color: =RGBA(99, 99, 99, 1)
+                    Font: =Font.Arial
+                    FontWeight: =FontWeight.Semibold
+                    Height: =38
+                    Size: =12
+                    Text: ="Cliente"
+                    Visible: |
+                        =varshowPopUpEyePagos
+                    Width: =113
+                    X: =32
+                    Y: =280
+                    ZIndex: =7
+
+                TxtMoneda_5 As label:
+                    Color: =RGBA(99, 99, 99, 1)
+                    Font: =Font.Arial
+                    FontWeight: =FontWeight.Semibold
+                    Height: =36
+                    Size: =12
+                    Text: ="Hito"
+                    Visible: |
+                        =varshowPopUpEyePagos
+                    Width: =72
+                    X: =32
+                    Y: =340
+                    ZIndex: =8
+
+                TxtPrecio_5 As label:
+                    Color: =RGBA(99, 99, 99, 1)
+                    Font: =Font.Arial
+                    FontWeight: =FontWeight.Semibold
+                    Height: =36
+                    Size: =12
+                    Text: ="Monto"
+                    Visible: |
+                        =varshowPopUpEyePagos
+                    Width: =66
+                    X: =32
+                    Y: =400
+                    ZIndex: =9
+
+                RctLine_5 As rectangle:
+                    Fill: =RGBA(212, 212, 212, 1)
+                    Height: =1
+                    Visible: |
+                        =varshowPopUpEyePagos
+                    Width: =674
+                    X: =1
+                    Y: =555
+                    ZIndex: =12
+
+            Label3_9 As label:
+                Font: =Font.Arial
+                Size: =12
+                Text: ="OC-0001"
+                Visible: |
+                    =varshowPopUpEyePagos
+                Width: =102
+                X: =32
+                Y: =124
+                ZIndex: =14
+
+            Label3_12 As label:
+                Font: =Font.Arial
+                Height: =37
+                Size: =12
+                Text: ="CXMART S.A.C."
+                Visible: |
+                    =varshowPopUpEyePagos
+                Width: =212
+                X: =32
+                Y: =244
+                ZIndex: =17
+
+            Label3_13 As label:
+                Font: =Font.Arial
+                Height: =37
+                Size: =12
+                Text: ="TOYOTA"
+                Visible: |
+                    =varshowPopUpEyePagos
+                Width: =102
+                X: =32
+                Y: =304
+                ZIndex: =18
+
+            Label3_14 As label:
+                Font: =Font.Arial
+                Height: =33
+                Size: =12
+                Text: ="1"
+                Visible: |
+                    =varshowPopUpEyePagos
+                Width: =88
+                X: =32
+                Y: =364
+                ZIndex: =19
+
+            Label3_15 As label:
+                Font: =Font.Arial
+                Height: =33
+                Size: =12
+                Text: ="$ 50.00"
+                Visible: |
+                    =varshowPopUpEyePagos
+                Width: =88
+                X: =32
+                Y: =424
+                ZIndex: =20
+
+            btnCancelar_5 As button:
+                BorderColor: =
+                BorderThickness: =0
+                Color: =RGBA(0, 0, 0, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                Font: =Font.Arial
+                Height: =44
+                HoverBorderColor: =ColorValue(varPrimaryColor)
+                HoverFill: =ColorValue(varPrimaryColor)
+                OnSelect: |-
+                    =UpdateContext({varshowPopUpEyePagos:false})
+                PressedBorderColor: =ColorValue(varPrimaryColor)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =ColorValue(varPrimaryColor)
+                Size: =12
+                Text: ="Cerrar"
+                Visible: |
+                    =true
+                Width: =120
+                X: =481
+                Y: =24
+                ZIndex: =23
+
+            Icon1_2 As icon.Check:
+                Color: =RGBA(255, 255, 255, 1)
+                Height: =20
+                Icon: =Icon.Check
+                OnSelect: |-
+                    =UpdateContext({varshowPopUpEyeFactura:false})
+                Visible: |
+                    =varshowPopUpEyePagos
+                Width: =20
+                X: =838
+                Y: =52
+                ZIndex: =25
+
+            Label3_11 As label:
+                Font: =Font.Arial
+                Size: =12
+                Text: ="F-0001"
+                Visible: |
+                    =varshowPopUpEyePagos
+                Width: =102
+                X: =32
+                Y: =184
+                ZIndex: =26
+
+            RctLine2_7 As rectangle:
+                Fill: =RGBA(212, 212, 212, 1)
+                Height: =349
+                Visible: |
+                    =varshowPopUpEyePagos
+                Width: =1
+                X: =316
+                Y: =108
+                ZIndex: =27
+
+            Image3 As image:
+                Height: =344
+                Width: =234
+                X: =354
+                Y: =108
+                ZIndex: =28
+
+    grpDisenoPagos As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =31
+
+        btnOrdenesdecompra_2 As button:
+            Align: =Align.Left
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            Color: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Font: =Font.Arial
+            FontWeight: =FontWeight.Normal
+            Height: =44
+            HoverBorderColor: =RGBA(71, 132, 141, 1)
+            HoverFill: =ColorValue(varPrimaryColor)
+            OnSelect: =Navigate(scrOrdenesdeCompra, ScreenTransition.None)
+            PressedBorderColor: =RGBA(71, 132, 141, 1)
+            PressedFill: =ColorValue(varPrimaryColor)
+            RadiusBottomLeft: =5
+            RadiusBottomRight: =5
+            RadiusTopLeft: =5
+            RadiusTopRight: =5
+            Size: =12
+            Text: ="          Ódenes de compra"
+            Width: =208
+            X: =20
+            Y: =132
+            ZIndex: =1
+
+        btnfacturas_3 As button:
+            Align: =Align.Left
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            Color: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Font: =Font.Arial
+            FontWeight: =FontWeight.Normal
+            Height: =44
+            HoverBorderColor: =RGBA(71, 132, 141, 1)
+            HoverFill: =ColorValue(varPrimaryColor)
+            OnSelect: =Navigate(scrFacturas, ScreenTransition.None)
+            PressedBorderColor: =RGBA(71, 132, 141, 1)
+            PressedFill: =ColorValue(varPrimaryColor)
+            RadiusBottomLeft: =5
+            RadiusBottomRight: =5
+            RadiusTopLeft: =5
+            RadiusTopRight: =5
+            Size: =12
+            Text: ="          Facturas"
+            Width: =208
+            X: =20
+            Y: =182
+            ZIndex: =2
+
+        btnfacturas_2 As button:
+            Align: =Align.Left
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            Fill: |+
+                =ColorValue(varPrimaryColor)
+                
+            Font: =Font.Arial
+            FontWeight: =FontWeight.Normal
+            Height: =44
+            HoverFill: =ColorValue(varPrimaryColor)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =ColorValue(varPrimaryColor)
+            RadiusBottomLeft: =5
+            RadiusBottomRight: =5
+            RadiusTopLeft: =5
+            RadiusTopRight: =5
+            Size: =12
+            Text: ="          Pagos"
+            Width: =208
+            X: =20
+            Y: =229
+            ZIndex: =3
+
+        txttittle_2 As label:
+            Color: =RGBA(71, 132, 141, 1)
+            Font: =Font.Arial
+            Height: =52
+            LineHeight: =0
+            Size: =20
+            Text: ="App de Compras"
+            Width: =271
+            X: =32
+            Y: =20
+            ZIndex: =4
+
+        txtgestion_2 As label:
+            Fill: =RGBA(70, 140, 140, 0)
+            Font: =Font.Arial
+            FontWeight: =FontWeight.Bold
+            Height: =19
+            LineHeight: =0
+            Size: =8
+            Text: ="Gestión"
+            Width: =79
+            X: =32
+            Y: =104
+            ZIndex: =5
+
+        txtmaestros_2 As label:
+            Fill: =RGBA(70, 140, 140, 0)
+            Font: =Font.Arial
+            FontWeight: =FontWeight.Bold
+            Height: =20
+            LineHeight: =0
+            Size: =8
+            Text: ="Maestros"
+            Width: =104
+            X: =32
+            Y: =374
+            ZIndex: =6
+
+        Iconline_14 As rectangle:
+            DisabledFill: |
+                =
+            Fill: |
+                =ColorValue(varlineColor)
+            Height: =1
+            Width: =208
+            X: =20
+            Y: =356
+            ZIndex: =7
+
+        Iconline_11 As rectangle:
+            DisabledFill: |
+                =
+            Fill: |
+                =ColorValue(varlineColor)
+            Height: =1
+            Width: =1366
+            Y: =72
+            ZIndex: =8
+
+        Iconline_12 As rectangle:
+            DisabledFill: |
+                =
+            Fill: |
+                =ColorValue(varlineColor)
+            Height: =695
+            Width: =1
+            X: =249
+            Y: =73
+            ZIndex: =9
+
+        btnNuevaOrden_2 As button:
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            Fill: |+
+                =ColorValue(varPrimaryColor)
+                
+            Font: =Font.Arial
+            FontWeight: =FontWeight.Normal
+            Height: =44
+            HoverFill: =ColorValue(varPrimaryColor)
+            OnSelect: |-
+                =UpdateContext({varshowPopUpPago:true})
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =ColorValue(varPrimaryColor)
+            RadiusBottomLeft: =5
+            RadiusBottomRight: =5
+            RadiusTopLeft: =5
+            RadiusTopRight: =5
+            Size: =12
+            Text: ="     Registrar Pago"
+            Width: =200
+            X: =1134
+            Y: =104
+            ZIndex: =10
+
+        txtfinanzas_2 As label:
+            Color: =RGBA(99, 99, 99, 1)
+            Fill: =RGBA(212, 212, 212, 0)
+            Font: =Font.Arial
+            Height: =19
+            LineHeight: =0
+            Text: ="Finanzas"
+            Width: =83
+            X: =1198
+            Y: =20
+            ZIndex: =11
+
+        Iconmas_2 As icon.Add:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =20
+            Icon: =Icon.Add
+            OnSelect: |-
+                =UpdateContext({varshowPopUp:true})
+            Width: =20
+            X: =1153
+            Y: =116
+            ZIndex: =12
+
+        txtfacturas_1 As label:
+            Fill: =RGBA(70, 140, 140, 0)
+            Font: =Font.Arial
+            FontWeight: =FontWeight.Lighter
+            Height: =52
+            LineHeight: =0
+            Size: =20
+            Text: ="Pagos"
+            Width: =323
+            X: =281
+            Y: =96
+            ZIndex: =13
+
+        txtusuario_2 As label:
+            Fill: =RGBA(70, 140, 140, 0)
+            Font: =Font.Arial
+            FontWeight: =FontWeight.Semibold
+            Height: =66
+            LineHeight: =0
+            Text: |
+                =User().FullName
+            Width: =259
+            X: =1022
+            Y: =20
+            ZIndex: =14
+
+        imgusuario_2 As image:
+            Height: =36
+            Image: |
+                =User().Image
+            RadiusBottomLeft: |
+                =60
+            RadiusBottomRight: =60
+            RadiusTopLeft: |
+                =60
+            RadiusTopRight: |
+                =60
+            Width: =36
+            X: =1283
+            Y: =25
+            ZIndex: =15
+
+        Image1_22 As image:
+            Height: =20
+            Image: =logo_facturas
+            Width: =20
+            X: =39
+            Y: =192
+            ZIndex: =17
+
+        Image1_23 As image:
+            Height: =20
+            Image: =Imagen7
+            Width: =20
+            X: =39
+            Y: =240
+            ZIndex: =18
+
+        btnmercaderia_2 As button:
+            Align: =Align.Left
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            Color: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Font: =Font.Arial
+            FontWeight: =FontWeight.Normal
+            Height: =44
+            HoverBorderColor: =ColorValue(varPrimaryColor)
+            HoverFill: =ColorValue(varPrimaryColor)
+            OnSelect: =Navigate(scrMercaderia, ScreenTransition.None)
+            PressedBorderColor: =ColorValue(varPrimaryColor)
+            PressedFill: =ColorValue(varPrimaryColor)
+            RadiusBottomLeft: =5
+            RadiusBottomRight: =5
+            RadiusTopLeft: =5
+            RadiusTopRight: =5
+            Size: =12
+            Text: ="          Mercadería"
+            Width: =208
+            X: =20
+            Y: =276
+            ZIndex: =19
+
+        Image1_24 As image:
+            Height: =20
+            Image: =Imagen5
+            Width: =20
+            X: =39
+            Y: =288
+            ZIndex: =20
+
+        btnproveedores_2 As button:
+            Align: =Align.Left
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            Color: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Font: =Font.Arial
+            FontWeight: =FontWeight.Normal
+            Height: =44
+            HoverBorderColor: =ColorValue(varPrimaryColor)
+            HoverFill: =ColorValue(varPrimaryColor)
+            OnSelect: =Navigate(scrProveedores)
+            PressedBorderColor: =ColorValue(varPrimaryColor)
+            PressedFill: =ColorValue(varPrimaryColor)
+            RadiusBottomLeft: =5
+            RadiusBottomRight: =5
+            RadiusTopLeft: =5
+            RadiusTopRight: =5
+            Size: =12
+            Text: ="          Proveedores"
+            Width: =208
+            X: =20
+            Y: =394
+            ZIndex: =21
+
+        Image1_25 As image:
+            Height: =20
+            Image: =Imagen3
+            Width: =20
+            X: =39
+            Y: =406
+            ZIndex: =22
+
+        btnProductosyservicios_2 As button:
+            Align: =Align.Left
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            Color: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Font: =Font.Arial
+            FontWeight: =FontWeight.Normal
+            Height: =44
+            HoverBorderColor: =ColorValue(varPrimaryColor)
+            HoverFill: =ColorValue(varPrimaryColor)
+            OnSelect: =Navigate(scrProductosyservicios)
+            PressedBorderColor: =ColorValue(varPrimaryColor)
+            PressedFill: =ColorValue(varPrimaryColor)
+            RadiusBottomLeft: =5
+            RadiusBottomRight: =5
+            RadiusTopLeft: =5
+            RadiusTopRight: =5
+            Size: =12
+            Text: ="         Productos & servicios"
+            Width: =208
+            X: =20
+            Y: =454
+            ZIndex: =23
+
+        Image1_26 As image:
+            Height: =20
+            Image: =Imagen4
+            Width: =20
+            X: =39
+            Y: =465
+            ZIndex: =24
+
+        Container2_2 As groupContainer.manualLayoutContainer:
+            Height: =568
+            Width: =1053
+            X: =281
+            Y: =168
+            ZIndex: =25
+
+            Container1_4 As groupContainer.manualLayoutContainer:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                DropShadow: =DropShadow.None
+                Fill: =RGBA(231, 236, 237, 1)
+                Height: =36
+                RadiusBottomLeft: =1
+                RadiusBottomRight: =1
+                Width: =1013
+                X: =20
+                Y: =88
+                ZIndex: =1
+
+                Label1_44 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =36
+                    Size: =9
+                    Text: ="ID"
+                    Width: =33
+                    X: =35
+                    ZIndex: =1
+
+                Label1_46 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =36
+                    Size: =9
+                    Text: ="Orden de compra"
+                    Width: =137
+                    X: =100
+                    ZIndex: =2
+
+                Label1_49 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =36
+                    Size: =9
+                    Text: ="Factura"
+                    Width: =111
+                    X: =230
+                    ZIndex: =3
+
+                Label1_50 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =36
+                    Size: =9
+                    Text: ="Proveedor"
+                    Width: =104
+                    X: =313
+                    ZIndex: =4
+
+                Label1_51 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =36
+                    Size: =9
+                    Text: ="Cliente"
+                    Width: =66
+                    X: =506
+                    ZIndex: =5
+
+                Label1_52 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =36
+                    Size: =9
+                    Text: ="Fecha de Vencimiento"
+                    Width: =144
+                    X: =659
+                    ZIndex: =8
+
+                Label1_53 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =36
+                    Size: =9
+                    Text: ="Fecha de Pago"
+                    Width: =99
+                    X: =838
+                    ZIndex: =9
+
+                Label1_54 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =36
+                    Size: =9
+                    Text: ="Hito"
+                    Width: =66
+                    X: =599
+                    ZIndex: =10
+
+            TxtInput_3 As text:
+                BorderColor: =RGBA(212, 212, 212, 1)
+                Color: =RGBA(147, 147, 147, 1)
+                Default: ="Buscar orden de compra"
+                DisabledColor: =RGBA(147, 147, 147, 1)
+                Fill: =RGBA(212, 212, 212, 0)
+                Font: =Font.Arial
+                Height: =44
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverColor: =RGBA(147, 147, 147, 1)
+                OnSelect: =
+                Size: =12
+                Visible: =
+                Width: =800
+                X: =20
+                Y: =20
+                ZIndex: =2
+
+            Iconline_13 As rectangle:
+                DisabledFill: |
+                    =
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =1
+                Width: =1013
+                X: =20
+                Y: =123
+                ZIndex: =3
+
+            TextInput1_2 As text:
+                BorderColor: =RGBA(212, 212, 212, 1)
+                BorderThickness: =1
+                Color: =RGBA(147, 147, 147, 1)
+                Default: =
+                DisabledBorderColor: =RGBA(212, 212, 212, 1)
+                DisabledColor: =RGBA(147, 147, 147, 1)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                Fill: =RGBA(147, 147, 147, 0)
+                Height: =44
+                HintText: ="Buscar pago"
+                HoverBorderColor: =RGBA(212, 212, 212, 1)
+                HoverColor: =RGBA(147, 147, 147, 1)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                PressedColor: =RGBA(147, 147, 147, 1)
+                PressedFill: =
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Width: =800
+                X: =20
+                Y: =20
+                ZIndex: =14
+
+            Iconbuscar_4 As icon.Search:
+                BorderColor: =RGBA(147, 147, 147, 1)
+                Color: =RGBA(147, 147, 147, 1)
+                Height: =18
+                Icon: =Icon.Search
+                Width: =18
+                X: =789
+                Y: =33
+                ZIndex: =18
+
+            Label5_2 As label:
+                Color: =RGBA(147, 147, 147, 1)
+                Text: ="Buscar orden de comprar"
+                Visible: |
+                    =IsBlank(Label5_2)
+                Width: =233
+                X: =32
+                Y: =24
+                ZIndex: =19
+
+            Gallery1_3 As gallery.galleryVertical:
+                DelayItemLoading: =true
+                Height: =443
+                Items: =CustomGallerySample
+                Layout: =Layout.Vertical
+                LoadingSpinner: =LoadingSpinner.Data
+                TemplatePadding: =0
+                TemplateSize: =36
+                Width: =1013
+                X: =20
+                Y: =124
+                ZIndex: =20
+
+                Label4_3 As label:
+                    Height: =36
+                    OnSelect: =Select(Parent)
+                    Size: =12
+                    Text: ="P-0001"
+                    Width: =78
+                    X: =18
+                    ZIndex: =1
+
+                Label2_41 As label:
+                    Height: =35
+                    Size: =12
+                    Text: ="OC-0001"
+                    Width: =80
+                    X: =114
+                    ZIndex: =2
+
+                Label2_42 As label:
+                    Height: =35
+                    Size: =12
+                    Text: ="F-0001"
+                    Width: =120
+                    X: =232
+                    ZIndex: =3
+
+                Label2_43 As label:
+                    Height: =36
+                    Size: =12
+                    Text: ="CXMART S.A.C."
+                    Width: =133
+                    X: =307
+                    ZIndex: =4
+
+                Label2_45 As label:
+                    Height: =36
+                    Size: =12
+                    Text: ="25/08/2023"
+                    Width: =107
+                    X: =678
+                    ZIndex: =5
+
+                Label2_44 As label:
+                    Height: =35
+                    Size: =12
+                    Text: ="TOYOTA"
+                    Width: =76
+                    X: =501
+                    Y: =1
+                    ZIndex: =6
+
+                Label2_46 As label:
+                    Height: =35
+                    Size: =12
+                    Text: ="25/09/2023"
+                    Width: =102
+                    X: =836
+                    ZIndex: =7
+
+                Image1_31 As image:
+                    Height: =20
+                    Image: =img_ojo
+                    OnSelect: |-
+                        =UpdateContext({varshowPopUpEyePagos:true})
+                    Width: =20
+                    X: =983
+                    Y: =8
+                    ZIndex: =8
+
+                Rectangle3_3 As rectangle:
+                    BorderColor: =RGBA(147, 147, 147, 1)
+                    Fill: =RGBA(147, 147, 147, 1)
+                    Height: =1
+                    OnSelect: =Select(Parent)
+                    Width: =Parent.Width
+                    Y: =35
+                    ZIndex: =9
+
+                Label2_47 As label:
+                    Height: =36
+                    Size: =12
+                    Text: ="1"
+                    Width: =46
+                    X: =606
+                    ZIndex: =10
+
+        Image1_27 As image:
+            Height: =20
+            Image: =Imagen11
+            Width: =20
+            X: =39
+            Y: =144
+            ZIndex: =30
+
+    grpPrimerPopUp_2 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =31
+
+        rctdegradado_2 As rectangle:
+            Fill: =RGBA(0, 0, 0, 0.2)
+            Height: =768
+            OnSelect: |-
+                =UpdateContext({varshowPopUpPago:false})
+            Visible: =varshowPopUpPago
+            Width: =1366
+            ZIndex: =28
+
+        grpCrearOrdenDeCompra_2 As groupContainer.manualLayoutContainer:
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =768
+            RadiusBottomLeft: =5
+            RadiusBottomRight: =5
+            RadiusTopLeft: =5
+            RadiusTopRight: =5
+            Visible: =varshowPopUpPago
+            Width: =498
+            X: =434
+            ZIndex: =29
+
+            TxtOrdendeCompra_8 As label:
+                Font: =Font.Arial
+                Height: =30
+                Size: =16
+                Text: ="Registrar Pago"
+                Width: =186
+                X: =33
+                Y: =19
+                ZIndex: =1
+
+            Icon2 As icon.Cancel:
+                Height: =20
+                Icon: =Icon.Cancel
+                OnSelect: |-
+                    =UpdateContext({varshowPopUpPago:false})
+                Width: =20
+                X: =437
+                Y: =24
+                ZIndex: =13
+
+            TxtOrdendeCompra_9 As label:
+                Color: =RGBA(99, 99, 99, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Semibold
+                Height: =30
+                Size: =12
+                Text: ="Orden de compra"
+                Width: =143
+                X: =32
+                Y: =62
+                ZIndex: =14
+
+            TxtOrdendeCompra_10 As label:
+                Color: =RGBA(99, 99, 99, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Semibold
+                Height: =30
+                Size: =12
+                Text: ="Factura"
+                Width: =142
+                X: =33
+                Y: =168
+                ZIndex: =16
+
+            TxtOrdendeCompra_11 As label:
+                Color: =RGBA(99, 99, 99, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Semibold
+                Height: =30
+                Size: =12
+                Text: ="Proveedor"
+                Width: =142
+                X: =33
+                Y: =277
+                ZIndex: =18
+
+            TxtOrdendeCompra_12 As label:
+                Color: =RGBA(99, 99, 99, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Semibold
+                Height: =30
+                Size: =12
+                Text: ="Cliente"
+                Width: =142
+                X: =33
+                Y: =385
+                ZIndex: =20
+
+            TextInput2 As text:
+                BorderColor: =ColorValue(varPrimaryColor)
+                BorderThickness: =1
+                Default: =""
+                Height: =46
+                HoverBorderColor: =ColorValue(varPrimaryColor)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Width: =424
+                X: =33
+                Y: =320
+                ZIndex: =21
+
+            TextInput2_1 As text:
+                BorderColor: =ColorValue(varPrimaryColor)
+                BorderThickness: =1
+                Default: =""
+                Height: =46
+                HoverBorderColor: =ColorValue(varPrimaryColor)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Width: =424
+                X: =33
+                Y: =428
+                ZIndex: =22
+
+            TxtOrdendeCompra_13 As label:
+                Color: =RGBA(99, 99, 99, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Semibold
+                Height: =30
+                Size: =12
+                Text: ="Hito"
+                Width: =142
+                X: =33
+                Y: =493
+                ZIndex: =23
+
+            TextInput2_2 As text:
+                BorderColor: =ColorValue(varPrimaryColor)
+                BorderThickness: =1
+                Default: =""
+                Height: =46
+                HoverBorderColor: =ColorValue(varPrimaryColor)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Width: =202
+                X: =35
+                Y: =531
+                ZIndex: =24
+
+            TxtOrdendeCompra_14 As label:
+                Color: =RGBA(99, 99, 99, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Semibold
+                Height: =30
+                Size: =12
+                Text: ="Monto"
+                Width: =142
+                X: =257
+                Y: =493
+                ZIndex: =25
+
+            TextInput2_3 As text:
+                BorderColor: =ColorValue(varPrimaryColor)
+                BorderThickness: =1
+                Default: =""
+                Height: =46
+                HoverBorderColor: =ColorValue(varPrimaryColor)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Width: =202
+                X: =257
+                Y: =531
+                ZIndex: =26
+
+            TxtOrdendeCompra_15 As label:
+                Color: =RGBA(99, 99, 99, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Semibold
+                Height: =30
+                Size: =12
+                Text: ="Pago"
+                Width: =142
+                X: =35
+                Y: =595
+                ZIndex: =27
+
+            Button1 As button:
+                BorderColor: |
+                    =ColorValue(varPrimaryColor)
+                BorderStyle: =BorderStyle.Dashed
+                Color: =RGBA(71, 132, 141, 1)
+                Fill: =RGBA(212, 212, 212, 0.5)
+                Height: =56
+                HoverColor: =ColorValue(varPrimaryColor)
+                HoverFill: =ColorFade(ColorValue(varPrimaryColor), 0.7)
+                PressedBorderColor: =ColorValue(varPrimaryColor)
+                PressedColor: =ColorValue(varPrimaryColor)
+                PressedFill: =ColorFade(ColorValue(varPrimaryColor), 0.7)
+                RadiusBottomLeft: =5
+                RadiusBottomRight: =5
+                RadiusTopLeft: =5
+                RadiusTopRight: =5
+                Text: ="Adjuntar archivo"
+                Width: =424
+                X: =35
+                Y: =636
+                ZIndex: =28
+
+            Button1_1 As button:
+                BorderColor: |
+                    =
+                BorderThickness: =0
+                Fill: =ColorValue(varPrimaryColor)
+                Height: =56
+                HoverBorderColor: =ColorValue(varPrimaryColor)
+                HoverFill: =ColorValue(varPrimaryColor)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =ColorValue(varPrimaryColor)
+                RadiusBottomLeft: =5
+                RadiusBottomRight: =5
+                RadiusTopLeft: =5
+                RadiusTopRight: =5
+                Text: ="Registrar Pago"
+                Width: =424
+                X: =35
+                Y: =705
+                ZIndex: =29
+
+            DropdownProveedor_3 As dropdown:
+                BorderColor: =RGBA(212, 212, 212, 1)
+                BorderThickness: =1
+                ChevronBackground: =ColorValue(varPrimaryColor)
+                ChevronHoverBackground: =ColorValue(varPrimaryColor)
+                Height: =44
+                HoverBorderColor: =ColorValue(varPrimaryColor)
+                HoverFill: =ColorFade(ColorValue(varPrimaryColor), 0.7)
+                Items: =DropDownSample
+                PressedBorderColor: =ColorValue(varPrimaryColor)
+                PressedFill: =ColorValue(varPrimaryColor)
+                SelectionFill: =ColorValue(varPrimaryColor)
+                Size: =12
+                Width: =424
+                X: =33
+                Y: =103
+                ZIndex: =30
+
+            DropdownProveedor_8 As dropdown:
+                BorderColor: =RGBA(212, 212, 212, 1)
+                BorderThickness: =1
+                ChevronBackground: =ColorValue(varPrimaryColor)
+                ChevronHoverBackground: =ColorValue(varPrimaryColor)
+                Height: =44
+                HoverBorderColor: =ColorValue(varPrimaryColor)
+                HoverFill: =ColorFade(ColorValue(varPrimaryColor), 0.7)
+                Items: =DropDownSample
+                PressedBorderColor: =ColorValue(varPrimaryColor)
+                PressedFill: =ColorValue(varPrimaryColor)
+                SelectionFill: =ColorValue(varPrimaryColor)
+                Size: =12
+                Width: =424
+                X: =33
+                Y: =212
+                ZIndex: =31
+
